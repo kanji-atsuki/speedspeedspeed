@@ -1,0 +1,21 @@
+{
+  "blog": {
+    "name": "iamspeed",
+    "title": "I am Speed",
+    "description": "a fic in fourteen-ish chapters. new ones drop when they're done ⚡",
+    "totalChapters": 14,
+    "avatar": "avatar.jpg"
+  },
+  "chapters": [
+    {
+      "number": 0,
+      "title": "",
+      "file": "00.md",
+      "date": "2026-10-26",
+      "summary": "",
+      "note": "",
+      "endNote": "",
+      "tags": ["it begins", "the door", "no beta we die like men"]
+    }
+  ]
+}

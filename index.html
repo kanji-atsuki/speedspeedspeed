@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en" data-theme="blue" data-font="serif">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>I am Speed</title>
+  <meta name="description" content="a fic, posted one chapter at a time">
+  <meta name="theme-color" content="#001935">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="I am Speed">
+  <link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" href="icons/icon-512.png">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400;1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="topbar-inner">
+      <a class="back" href="#/" aria-label="Back to dashboard">
+        <svg viewBox="0 0 24 24" width="26" height="26" aria-hidden="true"><path d="M15 5l-7 7 7 7" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </a>
+      <a class="brand" href="#/">i am speed<span class="brand-dot">.</span></a>
+      <button class="aa" type="button" aria-label="Reading settings">Aa</button>
+    </div>
+    <div class="progress" aria-hidden="true"><i></i></div>
+  </header>
+
+  <main id="app" class="wrap" aria-live="polite">
+    <div class="loading"><span></span><span></span><span></span></div>
+  </main>
+
+  <div class="scrim" hidden></div>
+  <section class="sheet" aria-label="Reading settings" aria-hidden="true">
+    <div class="grabber"></div>
+    <h2>reading settings</h2>
+
+    <p class="sheet-label">theme</p>
+    <div class="themes">
+      <button type="button" data-set-theme="blue"><i style="--a:#001935;--b:#fff"></i>dash</button>
+      <button type="button" data-set-theme="classic"><i style="--a:#36465d;--b:#fff"></i>2014</button>
+      <button type="button" data-set-theme="dark"><i style="--a:#0b0b0d;--b:#1c1c1f"></i>dark</button>
+    </div>
+
+    <p class="sheet-label">text size</p>
+    <div class="size-row">
+      <span class="size-sm">A</span>
+      <input type="range" min="15" max="24" step="1" id="fs" aria-label="Text size">
+      <span class="size-lg">A</span>
+    </div>
+
+    <p class="sheet-label">font</p>
+    <div class="seg">
+      <button type="button" data-set-font="serif" class="f-serif">Serif</button>
+      <button type="button" data-set-font="sans" class="f-sans">Sans</button>
+    </div>
+
+    <button type="button" class="sheet-done">done</button>
+  </section>
+
+  <script src="app.js"></script>
+</body>
+</html>
