@@ -37,6 +37,7 @@ Every non-empty line is its own paragraph. `*it*`, `**b**`, `***b+i***`, `~~s~~`
 - Raw draft `.txt` files (`fanfic.txt`, `chap*.txt`) stay local — they're in `.gitignore`.
 - Avatar is `avatar.jpg` (set via `blog.avatar` in chapters.json).
 - The user hasn't said whether they want their typos fixed; don't fix them unless asked.
+- **Point out story problems.** When reading a chapter, flag anything that looks wrong: duplicated or leftover draft passages, continuity errors (injuries, clothes, time of day, who's where, what a character already knows), character details that contradict canon or earlier chapters, and lines that look like they're missing words. List them for the user with a short quote of each spot. Don't change the text for these yourself; the user decides (see chapter 1's duplicate paragraph, which they asked to cut).
 
 ## Tools on this machine
 
