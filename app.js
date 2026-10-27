@@ -127,7 +127,10 @@
     </footer>`;
   };
 
-  const isRead = c => store.get('read', []).includes(c.id);
+  // setting "updated" on a chapter (e.g. after finishing a WIP) makes it count as unread again
+  const readKey = c => c.updated ? `${c.id}@${c.updated}` : c.id;
+  const isRead = c => store.get('read', []).includes(readKey(c));
+  const pill = c => isRead(c) ? '' : `<span class="pill">${c.updated && store.get('read', []).includes(c.id) ? 'updated' : 'new'}</span>`;
 
   /* ---------------- views ---------------- */
 
@@ -170,7 +173,7 @@
       const href = `#/c/${encodeURIComponent(c.id)}`;
       return `
       <article class="post">
-        ${head(c, isRead(c) ? '' : '<span class="pill">new</span>')}
+        ${head(c, pill(c))}
         <div class="post-body prose">
           ${kicker(c)}
           <a class="post-title-link" href="${href}"><h1>${title(c)}</h1></a>
@@ -227,7 +230,7 @@
       <nav class="chapter-nav">${nav}</nav>`;
 
     const read = store.get('read', []);
-    if (!read.includes(c.id)) store.set('read', [...read, c.id]);
+    if (!read.includes(readKey(c))) store.set('read', [...read, c.id, readKey(c)]);
 
     const pct = store.get('pos:' + c.id, 0);
     const restore = () => window.scrollTo(0, pct > 0.97 ? 0 : pct * (document.documentElement.scrollHeight - innerHeight));
