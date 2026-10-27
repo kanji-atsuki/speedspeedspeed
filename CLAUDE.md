@@ -37,7 +37,14 @@ Every non-empty line is its own paragraph. `*it*`, `**b**`, `***b+i***`, `~~s~~`
 - Raw draft `.txt` files (`fanfic.txt`, `chap*.txt`) stay local — they're in `.gitignore`.
 - Avatar is `avatar.jpg` (set via `blog.avatar` in chapters.json).
 - The user hasn't said whether they want their typos fixed; don't fix them unless asked.
-- **Point out story problems.** When reading a chapter, flag anything that looks wrong: duplicated or leftover draft passages, continuity errors (injuries, clothes, time of day, who's where, what a character already knows), character details that contradict canon or earlier chapters, and lines that look like they're missing words. List them for the user with a short quote of each spot. Don't change the text for these yourself; the user decides (see chapter 1's duplicate paragraph, which they asked to cut).
+- **Point out mistakes, inconsistencies and typos.** When reading a chapter, flag anything that looks wrong: typos and grammar slips, duplicated or leftover draft passages, continuity errors (injuries, clothes, time of day, who's where, what a character already knows), character details that contradict canon or earlier chapters, and lines that look like they're missing words. List them for the user with a short quote of each spot and the suggested fix. Don't change the text for these yourself; the user decides which to apply (see chapter 1's duplicate paragraph, which they asked to cut). Skip deliberate voice/slang ("asf", "gurl", "HURTED", "Bodoh").
+
+## Story facts (keep later chapters consistent)
+
+- Leon wears a dark navy tactical **shirt**, not a vest. Gray is coming in at one temple (not fully gray hair). Small white scar through the outer end of his right eyebrow.
+- Zoro: scar over closed left eye, diagonal chest scar, three gold earrings, green outfit, three swords. Gets lost constantly; Ai navigates.
+- Ai: 18 today, barefoot in pale blue pajama pants and an oversized black t-shirt, left foot cut on the concrete step; phone dead except a `00:00` display.
+- During the foot-bandaging scene in chapter 1, Ai is **standing** (the user chose standing over sitting).
 
 ## Tools on this machine
 
