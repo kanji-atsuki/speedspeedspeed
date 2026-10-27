@@ -23,7 +23,7 @@ The user drops raw chapter text in the project root (e.g. `chap 2.txt`) or paste
 
 **Work-in-progress chapters:** a half-finished chapter gets the `"wip"` tag and `"endNote": "to be continued… this chapter is still being written ⚡"`. When the user finishes it: replace the `.md` with the full text, remove the `wip` tag and endNote, and add `"updated": "YYYY-MM-DD"` — that shows her an **UPDATED** pill even though she already read the first half.
 
-Chapter 1 (`01.md`) is currently a WIP as of 2026-10-27. Its text has a passage that appears twice in near-duplicate form ("And then, because you were sitting on an elevated piece of concrete…" / "And right away you found the problem with lifting one foot…") — left as written; mention it if the user sends the finished chapter.
+Chapter 1 (`01.md`) is currently a WIP as of 2026-10-27. The user asked to delete the paragraph starting "And then, because you were sitting on an elevated piece of concrete…" (a draft duplicate of "And right away you found the problem with lifting one foot…"). If they send a finished version from their own draft file and that paragraph is still in it, leave it out.
 
 ## Formatting the renderer understands (app.js `render`/`inline`)
 
